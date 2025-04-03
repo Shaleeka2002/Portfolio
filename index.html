@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaleeka - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-background">
+        <div class="grid-lines"></div>
+        <div class="orbs">
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+        </div>
+        <div class="particles" id="particles"></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#" aria-label="Home"><span class="highlight"></span>Portfolio<span class="highlight"></span></a>
+        </div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+            <label for="theme-toggle-checkbox" class="theme-toggle-label" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span>Menu</span> <!-- You can visually hide this if needed -->
+            </label>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="intro">Hello, my name is</p>
+                    <h1>Shaleeka Rashadi Bandara</h1>
+                    <h2>I'm a <span class="highlight">Software Engineer Student</span></h2>
+                    <p class="description">
+                        Aspiring software engineer and web developer seeking internship opportunities to apply my skills and grow professionally.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#projects" class="btn secondary-btn">View Projects</a>
+                        
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shaleeka-bandara-59b4502b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="shaleekarashadi@gmail.com" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="WhatsApp Image 2025-03-27 at 21.06.47_79d4e45c.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Who I Am</h2>
+                <p>A passionate student with a love for technology</p>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive websites with HTML, CSS,React and JavaScript.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Learning server-side programming and database management.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Applying analytical thinking to solve technical challenges.</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a Software Engineer student at University of Westminster (IIT), currently in my 2nd year. My academic journey has equipped me with a strong foundation in programming fundamentals, algorithms, and data structures.
+                    </p>
+                    <p>
+                        I'm particularly interested in web development and software engineering. Through coursework and personal projects, I've gained experience with various technologies and am eager to apply these skills in a professional setting.
+                    </p>
+                    <p>
+                        I'm seeking an internship opportunity where I can contribute to meaningful projects while continuing to learn and grow as a developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2>Academic Background</h2>
+                <p>My educational journey</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>BEng(Hons) Software Engineer</h3>
+                        <h4>University of Westminster (IIT)</h4>
+                        <p class="education-date">2024 - 2027 (Expected)</p>
+                        <p>
+                            Relevant coursework: Data Structures & Algorithms, Web Development, Database Systems, Object-Oriented Programming
+                        </p>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2>My Expertise</h2>
+                <p>Technologies I'm learning and working with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar" title="HTML/CSS: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar" title="JavaScript: 70%">
+                                <div class="skill-level" style="width: 70%;">
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar" title="React: 60%">
+                                <div class="skill-level" style="width: 60%;">
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar" title="Responsive Design: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar" title="Python: 75%">
+                                <div class="skill-level" style="width: 75%;">
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="skill">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar" title="SQL: 65%">
+                                <div class="skill-level" style="width: 65%;">
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar" title="PHP: 52%">
+                                <div class="skill-level" style="width: 52%;">
+                                    <span class="skill-percent">52%</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar" title="Java: 70%">
+                                <div class="skill-level" style="width: 70%;">
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Git/GitHub</div>
+                            <div class="skill-bar" title="Git/GitHub: 75%">
+                                <div class="skill-level" style="width: 75%;">
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">VS Code</div>
+                            <div class="skill-bar" title="VS Code: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-bar" title="Figma: 70%">
+                                <div class="skill-level" style="width: 70%;">
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Problem Solving</div>
+                            <div class="skill-bar" title="Problem Solving: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Teamwork</div>
+                            <div class="skill-bar" title="Teamwork: 90%">
+                                <div class="skill-level" style="width: 90%;">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>My Projects</h2>
+                <p>Showcasing my work and academic projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 144358.png" alt="My Bete -Diabetes Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>My Bete -Diabetes Management App (Team Project)</h3>
+                        <p>This is a mobile app for managing diabetes. Any user can use this app they have diabetes or not. </p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/MyBete-App" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <a href="my bete mv.mp4" target="_blank" rel="noopener noreferrer" class="btn small-btn primary-btn" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 145408.png" alt="poplk">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pop Lk</h3>
+                        <p>A drama website  </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/poplk" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <a href="poplk.mp4" target="_blank" rel="noopener noreferrer" class="btn small-btn primary-btn" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 152159.png" alt="poplk">
+                    </div>
+                    <div class="project-info">
+                        <h3>My Bete - Meal Planner & Calorie Counter Part UI </h3>
+                        <p> A section of I do not have Diabetes in My Bete app. User can count calories for each meal daily.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            
+                        
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/MyBete-App" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <a href="https://www.figma.com/design/qoCowiN0OJJp5Ejzv3T4GN/my-Bete?node-id=179-1236&t=qMVQB53lOokUge0A-0" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on Figma"></i> Figma</a>
+                            
+                            <a href="WhatsApp Video 2025-04-03 at 16.05.24_2127272f.mp4" target="_blank" rel="noopener noreferrer" class="btn small-btn primary-btn" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="65942.jpg" alt="Ticket Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ticket Management System</h3>
+                        <p>A ticket management system for customer and vendor.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Javascript</span>
+                          
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/Ticket-Management-System" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 154122.png" alt="cashew webpage UI">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cashew Web page UI</h3>
+                        <p>A UI for cashew buissness</p>
+                        <div class="project-tags">
+                            <span>FIgma</span>
+                           
+                          
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/c2J72qXtwA9FsxAytu0aoA/cashew?node-id=0-1&p=f&t=lNtN27o8Ieducpyv-0" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label=""></i> Figma</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" aria-label="See more projects on GitHub">See More Projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>Interested in offering an internship? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="shaleekarashadi@gmail.com">shaleekarashadi@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+94 783373256">+94 783373256</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Dehiwala, Colombo</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/shaleeka-bandara-59b4502b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="mailto:shaleekarashadi@gmail.com" aria-label="Email Me"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" aria-label="Send message">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="hero-buttons">
+                <a href="shaleeka cv.pdf" download class="btn download-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; shaleeka. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for form submission (optional) -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+    
+            window.location.href = `mailto:shaleekarashadi@gmail.com?subject=New Contact Message&body=Email: ${email}%0D%0A%0D%0A${message}`;
+    
+            alert('Redirecting to your email app.');
+            this.reset();
+        });
+    </script>
+    
+</body>
+
+    <!-- Add this before the closing body tag -->
+    <script>
+        // Create particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 2px and 6px
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random opacity
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                
+                // Animation
+                particle.style.animation = `float ${Math.random() * 10 + 15}s linear infinite`;
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Animate sections on scroll
+        function animateSections() {
+            const sections = document.querySelectorAll('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+        
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            animateSections();
+            
+            // Add glitch effect to headings
+            const headings = document.querySelectorAll('h1, h2');
+            headings.forEach(heading => {
+                if (heading.classList.contains('glitch-effect')) {
+                    heading.setAttribute('data-text', heading.textContent);
+                }
+            });
+        });
+
+        // Theme Toggle Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle-checkbox');
+        
+        // Check for saved theme preference or use device preference
+        const savedTheme = localStorage.getItem('theme') || 
+            (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        
+        // Apply saved theme
+        if (savedTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeToggle.checked = true;
+        }
+        
+        // Toggle theme when checkbox changes
+        themeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
