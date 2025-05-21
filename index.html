@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaleeka - Software Engineering Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <div class="animated-background">
+        <div class="grid-lines"></div>
+        <div class="orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="particles" id="particles"></div>
+        
+        <!-- Tech animation elements -->
+        <div class="circuit-pattern" id="circuit-pattern"></div>
+        <div class="binary-rain" id="binary-rain"></div>
+        <div class="tech-icons" id="tech-icons"></div>
+        <div class="network" id="network"></div>
+        <div class="code-blocks" id="code-blocks"></div>
+        <div id="pulse-container"></div>
+        <canvas id="matrix-canvas"></canvas>
+        <div class="floating-tech" id="floating-tech"></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#" aria-label="Home"><span class="highlight">Portfolio</span></a>
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+                <label for="theme-toggle-checkbox" class="theme-toggle-label" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>Menu</span>
+                </label>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="intro">Hello, my name is</p>
+                    <h1 class="glitch-text" data-text="Shaleeka Rashadi">Shaleeka Rashadi</h1>
+                    <h2>I'm a <span class="highlight typewriter" id="typewriter-text"></span></h2>
+                    <p class="description">
+                        Passionate second-year Software Engineering student at the University of Westminster seeking a Full Stack Developer internship to enhance my skills and gain hands-on experience. Eager to apply my knowledge in frontend and backend development, database management, and software engineering to build scalable solutions with seamless user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#projects" class="btn secondary-btn">View Projects</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shaleeka-bandara-59b4502b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:shaleekarashadi@gmail.com" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="WhatsApp Image 2025-03-27 at 21.06.47_79d4e45c.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Who I Am</h2>
+                <p>A passionate software engineering student with a focus on full stack development</p>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive, user-friendly interfaces with HTML, CSS, JavaScript, React.js, and JavaFX.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Developing robust applications using Java and Python with a focus on clean, efficient code.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3>Database Management</h3>
+                        <p>Working with MySQL databases to store, retrieve, and manage application data effectively.</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a second-year software engineering student at the University of Westminster with a growing expertise in both frontend and backend development. My academic journey has provided me with a solid foundation in software development principles, and I'm continuously expanding my knowledge through hands-on projects.
+                    </p>
+                    <p>
+                        I'm particularly interested in full stack development, creating applications using Java and Python, as well as developing web interfaces with HTML, CSS, JavaScript, and React. I enjoy the process of turning ideas into functional software that solves real problems.
+                    </p>
+                    <p>
+                        I'm seeking a Full Stack Developer internship opportunity where I can apply my technical skills, learn from experienced professionals, and contribute to meaningful projects. I'm a quick learner, detail-oriented, and excited to grow in a collaborative team environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Education) -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2>Academic Background</h2>
+                <p>My journey in software engineering</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>BEng(Hons) Software Engineering</h3>
+                        <h4>University of Westminster, UK</h4>
+                        <p class="education-date">2022 - 2024 (Second Year)</p>
+                        <p>
+                            Currently specializing in programming fundamentals, web technologies, and software development methodologies. Completing coursework in programming, data structures, algorithms, database systems, and software engineering principles.
+                        </p>
+                        <p>
+                            <strong>Relevant Coursework:</strong> Object-Oriented Programming, Web Development, Database Design, Software Engineering Principles, Data Structures & Algorithms
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>GCE Advanced Level</h3>
+                        <h4>St Joseph's Girls' College, Gampola</h4>
+                        <p class="education-date">2022</p>
+                        <p>
+                            Physical Science stream with Combined Mathematics (C-1) and Science (S-2).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>GCE Ordinary Level</h3>
+                        <h4>St Joseph's Girls' College, Gampola</h4>
+                        <p class="education-date">2022</p>
+                        <p>
+                            Achieved 8 A's and 1 B in the examination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2>My Technical Skills</h2>
+                <p>Technologies I've learned and continue to develop</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar" title="HTML: 95%">
+                                <div class="skill-level" style="width: 95%;">
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar" title="CSS: 90%">
+                                <div class="skill-level" style="width: 90%;">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar" title="JavaScript: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">React.js</div>
+                            <div class="skill-bar" title="React.js: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaFX</div>
+                            <div class="skill-bar" title="JavaFX: 75%">
+                                <div class="skill-level" style="width: 75%;">
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar" title="Java: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar" title="Python: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-bar" title="MySQL: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Figma (UI/UX Design)</div>
+                            <div class="skill-bar" title="Figma: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">VS Code</div>
+                            <div class="skill-bar" title="VS Code: 90%">
+                                <div class="skill-level" style="width: 90%;">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Android Studio</div>
+                            <div class="skill-bar" title="Android Studio: 75%">
+                                <div class="skill-level" style="width: 75%;">
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">GitHub</div>
+                            <div class="skill-bar" title="GitHub: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Project Management</div>
+                            <div class="skill-bar" title="Project Management: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Teamwork</div>
+                            <div class="skill-bar" title="Teamwork: 90%">
+                                <div class="skill-level" style="width: 90%;">
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Time Management</div>
+                            <div class="skill-bar" title="Time Management: 85%">
+                                <div class="skill-level" style="width: 85%;">
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Communication</div>
+                            <div class="skill-bar" title="Communication: 80%">
+                                <div class="skill-level" style="width: 80%;">
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-name">Sinhala (Fluent)</div>
+                            <div class="skill-bar" title="Sinhala: 100%">
+                                <div class="skill-level" style="width: 100%;">
+                                    <span class="skill-percent">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">English (Basics)</div>
+                            <div class="skill-bar" title="English: 60%">
+                                <div class="skill-level" style="width: 60%;">
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>My Projects</h2>
+                <p>Showcasing my academic and personal development work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 144358.png" alt="My Bete -Diabetes Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>MyBete - Diabetes Management App</h3>
+                        <p>Developed the meal planner feature with a calorie counter and healthy meal recipes. Integrated Firebase for real-time data storage.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/MyBete-App" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <a href="my bete mv.mp4" target="_blank" rel="noopener noreferrer" class="btn small-btn primary-btn" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-03 145408.png" alt="poplk">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pop LK - Drama Website</h3>
+                        <p>Designed and developed a drama website featuring Sinhala-subtitled content with a responsive UI.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/poplk" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <a href="poplk.mp4" target="_blank" rel="noopener noreferrer" class="btn small-btn primary-btn" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="65942.jpg" alt="Ticket Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ticket Management System (Java OOP)</h3>
+                        <p>Developed a ticket management system using Java OOP principles for efficient ticket creation, assignment, and tracking. Implemented scalable object-oriented design for easy maintenance and updates.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002/Ticket-Management-System" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-05-21 194136.png" alt="Life Below Water">
+                    </div>
+                    <div class="project-info">
+                        <h3>"Life Below Water" Web Development Project</h3>
+                        <p>Collaborated on a web platform for ocean conservation. Developed the splash screen, shop page, and content page. Built interactive features using HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Collaboration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" class="btn small-btn" aria-label="View code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" aria-label="See more projects on GitHub">See More Projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2>Certificates</h2>
+                <p>Recognition of my academic and professional accomplishments</p>
+            </div>
+            <div class="certificates-content">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award" aria-hidden="true"></i>
+                    </div>
+                    <div class="certificate-details">
+                        <h3>Hult Prize 2024-2025</h3>
+                        <p>Participation in the on-campus programme</p>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="certificate-details">
+                        <h3>General Certificate of Education (Advanced Level)</h3>
+                        <p>Sri Lanka Examination Department (Index: 4446011)</p>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="certificate-details">
+                        <h3>General Certificate of Education (Ordinary Level)</h3>
+                        <p>Sri Lanka Examination Department (Index: 84305517)</p>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate" aria-hidden="true"></i>
+                    </div>
+                    <div class="certificate-details">
+                        <h3>Certificate in Computer Application</h3>
+                        <p>National Youth Services Council (Distinction Pass)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>Interested in offering an internship opportunity? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:shaleekarashadi@gmail.com">shaleekarashadi@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+94783373256">+94 783373256</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Shaleeka2002" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/shaleeka-bandara-59b4502b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="mailto:shaleekarashadi@gmail.com" aria-label="Email Me"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" aria-label="Send message">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="shaleeka rashadi (2).pdf" download class="btn download-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">References</span>
+                <h2>Professional References</h2>
+                <p>Individuals who can vouch for my skills and work ethic</p>
+            </div>
+            <div class="references-content">
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                    </div>
+                    <div class="reference-details">
+                        <h3>Saadh Jawwadh</h3>
+                        <p class="reference-title">Assistant Lecturer</p>
+                        <p>Computing Department</p>
+                        <p>Informatics Institute of Technology (IIT)</p>
+                        <div class="reference-contact">
+                            <p><i class="fas fa-phone"></i> 0771817176</p>
+                            <p><i class="fas fa-envelope"></i> SAADH.J@IIT.AC.LK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                    </div>
+                    <div class="reference-details">
+                        <h3>Ishan Weerakoon</h3>
+                        <p class="reference-title">Senior Software Engineer</p>
+                        <div class="reference-contact">
+                            <p><i class="fas fa-phone"></i> 0774159866</p>
+                            <p><i class="fas fa-envelope"></i> ISHAN.WEERAKOON@IFS.COM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; Shaleeka Rashadi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animation toggle button -->
+    <button class="animation-toggle" aria-label="Toggle animations" title="Toggle animations">
+        <i class="fas fa-eye"></i>
+    </button>
+
+    <style>
+        /* Additional styles for new sections */
+        .certificates-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .certificate-card {
+            background: var(--card-dark);
+            border-radius: 10px;
+            padding: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .light-mode .certificate-card {
+            background: var(--card-light);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            min-width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .certificate-details h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .certificate-details p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        .references-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .reference-card {
+            background: var(--card-dark);
+            border-radius: 10px;
+            padding: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .light-mode .reference-card {
+            background: var(--card-light);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .reference-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .reference-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            min-width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reference-details h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .reference-title {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .reference-contact {
+            margin-top: 15px;
+        }
+
+        .reference-contact p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .reference-contact i {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .certificates-content,
+            .references-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // Create particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return; // Check if element exists
+            
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 2px and 6px
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random opacity
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                
+                // Animation
+                particle.style.animation = `particleFloat ${Math.random() * 10 + 15}s linear infinite`;
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Technology-themed animations
+        function createTechAnimations() {
+            createCircuitPattern();
+            createBinaryRain();
+            createTechIcons();
+            createNetworkNodes();
+            createCodeBlocks();
+            createPulseEffects();
+            initMatrixEffect();
+            createFloatingTech();
+            setupTypewriter();
+        }
+    
+        // Create digital circuit pattern
+        function createCircuitPattern() {
+            const circuitPattern = document.getElementById('circuit-pattern');
+            if (!circuitPattern) return; // Check if element exists
+            
+            const circuitCount = 8;
+            
+            for (let i = 0; i < circuitCount; i++) {
+                // Create a circuit path with nodes
+                const startX = Math.random() * window.innerWidth;
+                const startY = Math.random() * window.innerHeight;
+                
+                createCircuitPath(circuitPattern, startX, startY, 4 + Math.floor(Math.random() * 4));
+            }
+        }
+    
+        function createCircuitPath(container, x, y, segments) {
+            // Create starting node
+            const startNode = document.createElement('div');
+            startNode.classList.add('circuit-node');
+            startNode.style.left = `${x}px`;
+            startNode.style.top = `${y}px`;
+            container.appendChild(startNode);
+            
+            let currentX = x;
+            let currentY = y;
+            
+            // Create segments
+            for (let i = 0; i < segments; i++) {
+                // Decide direction: 0 = right, 1 = down, 2 = left, 3 = up
+                const direction = Math.floor(Math.random() * 4);
+                const length = 30 + Math.random() * 100;
+                
+                const line = document.createElement('div');
+                line.classList.add('circuit-line');
+                
+                let endX = currentX;
+                let endY = currentY;
+                
+                switch (direction) {
+                    case 0: // right
+                        line.style.height = '2px';
+                        line.style.width = `${length}px`;
+                        line.style.left = `${currentX}px`;
+                        line.style.top = `${currentY}px`;
+                        endX = currentX + length;
+                        break;
+                    case 1: // down
+                        line.style.width = '2px';
+                        line.style.height = `${length}px`;
+                        line.style.left = `${currentX}px`;
+                        line.style.top = `${currentY}px`;
+                        endY = currentY + length;
+                        break;
+                    case 2: // left
+                        line.style.height = '2px';
+                        line.style.width = `${length}px`;
+                        line.style.left = `${currentX - length}px`;
+                        line.style.top = `${currentY}px`;
+                        endX = currentX - length;
+                        break;
+                    case 3: // up
+                        line.style.width = '2px';
+                        line.style.height = `${length}px`;
+                        line.style.left = `${currentX}px`;
+                        line.style.top = `${currentY - length}px`;
+                        endY = currentY - length;
+                        break;
+                }
+                
+                container.appendChild(line);
+                
+                // Create node at the end of the line
+                const node = document.createElement('div');
+                node.classList.add('circuit-node');
+                node.style.left = `${endX}px`;
+                node.style.top = `${endY}px`;
+                container.appendChild(node);
+                
+                currentX = endX;
+                currentY = endY;
+            }
+        }
+    
+        // Create binary rain effect
+        function createBinaryRain() {
+            const binaryRain = document.getElementById('binary-rain');
+            if (!binaryRain) return; // Check if element exists
+            
+            const binaryCount = 30;
+            
+            for (let i = 0; i < binaryCount; i++) {
+                setTimeout(() => {
+                    const binary = document.createElement('div');
+                    binary.classList.add('binary');
+                    binary.textContent = Math.random() > 0.5 ? '1' : '0';
+                    
+                    const x = Math.random() * window.innerWidth;
+                    binary.style.left = `${x}px`;
+                    
+                    const duration = 5 + Math.random() * 10;
+                    binary.style.animation = `binaryFall ${duration}s linear infinite`;
+                    binary.style.animationDelay = `${Math.random() * 10}s`;
+                    
+                    binaryRain.appendChild(binary);
+                }, i * 200);
+            }
+        }
+    
+        // Create floating tech icons
+        function createTechIcons() {
+            const techIcons = document.getElementById('tech-icons');
+            if (!techIcons) return; // Check if element exists
+            
+            const icons = [
+                'fa-code', 'fa-microchip', 'fa-laptop-code', 'fa-database', 
+                'fa-server', 'fa-wifi', 'fa-cloud', 'fa-cogs', 
+                'fa-terminal', 'fa-sitemap', 'fa-code-branch', 'fa-bug'
+            ];  'fa-cogs', 
+                'fa-terminal', 'fa-sitemap', 'fa-code-branch', 'fa-bug'
+            
+            
+            const iconCount = 15;
+            
+            for (let i = 0; i < iconCount; i++) {
+                const icon = document.createElement('i');
+                icon.classList.add('tech-icon', 'fas', icons[Math.floor(Math.random() * icons.length)]);
+                
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+                icon.style.left = `${x}px`;
+                icon.style.top = `${y}px`;
+                
+                const duration = 15 + Math.random() * 20;
+                icon.style.animation = `floatIcon ${duration}s linear infinite`;
+                icon.style.animationDelay = `${Math.random() * 10}s`;
+                
+                techIcons.appendChild(icon);
+            }
+        }
+    
+        // Create network nodes with connecting lines
+        function createNetworkNodes() {
+            const network = document.getElementById('network');
+            if (!network) return; // Check if element exists
+            
+            const nodeCount = 12;
+            const nodes = [];
+            
+            // Create nodes
+            for (let i = 0; i < nodeCount; i++) {
+                const node = document.createElement('div');
+                node.classList.add('network-node');
+                
+                const x = 50 + Math.random() * (window.innerWidth - 100);
+                const y = 50 + Math.random() * (window.innerHeight - 100);
+                node.style.left = `${x}px`;
+                node.style.top = `${y}px`;
+                
+                network.appendChild(node);
+                nodes.push({ element: node, x, y });
+            }
+            
+            // Create connections between some nodes
+            for (let i = 0; i < nodes.length; i++) {
+                const connections = 1 + Math.floor(Math.random() * 2); // 1-2 connections per node
+                
+                for (let j = 0; j < connections; j++) {
+                    const targetIndex = (i + 1 + Math.floor(Math.random() * (nodes.length - 1))) % nodes.length;
+                    
+                    const line = document.createElement('div');
+                    line.classList.add('network-line');
+                    
+                    const node1 = nodes[i];
+                    const node2 = nodes[targetIndex];
+                    
+                    const dx = node2.x - node1.x;
+                    const dy = node2.y - node1.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+                    
+                    line.style.width = `${distance}px`;
+                    line.style.left = `${node1.x}px`;
+                    line.style.top = `${node1.y}px`;
+                    line.style.transform = `rotate(${angle}deg)`;
+                    
+                    network.appendChild(line);
+                }
+            }
+        }
+    
+        // Create floating code blocks
+        function createCodeBlocks() {
+            const codeBlocks = document.getElementById('code-blocks');
+            if (!codeBlocks) return; // Check if element exists
+            
+            const blockCount = 4;
+            
+            const codeSnippets = [
+                `<div class="code-line"><span class="code-keyword">function</span> init() {</div>
+                 <div class="code-line">  <span class="code-keyword">const</span> data = getData();</div>
+                 <div class="code-line">  <span class="code-keyword">return</span> process(data);</div>
+                 <div class="code-line">}</div>`,
+                
+                `<div class="code-line"><span class="code-keyword">import</span> React <span class="code-keyword">from</span> <span class="code-string">'react'</span>;</div>
+                 <div class="code-line"><span class="code-keyword">const</span> App = () => {</div>
+                 <div class="code-line">  <span class="code-keyword">return</span> <span class="code-string">'Hello'</span>;</div>
+                 <div class="code-line">}</div>`,
+                
+                `<div class="code-line"><span class="code-comment">// API request</span></div>
+                 <div class="code-line"><span class="code-keyword">async</span> <span class="code-keyword">function</span> fetchData() {</div>
+                 <div class="code-line">  <span class="code-keyword">const</span> res = <span class="code-keyword">await</span> fetch(url);</div>
+                 <div class="code-line">}</div>`,
+                
+                `<div class="code-line"><span class="code-keyword">class</span> Database {</div>
+                 <div class="code-line">  connect() {</div>
+                 <div class="code-line">    <span class="code-comment">// Connect logic</span></div>
+                 <div class="code-line">  }</div>
+                 <div class="code-line">}</div>`
+            ];
+            
+            for (let i = 0; i < blockCount; i++) {
+                setTimeout(() => {
+                    const block = document.createElement('div');
+                    block.classList.add('code-block');
+                    
+                    const x = 50 + Math.random() * (window.innerWidth - 300);
+                    const y = 50 + Math.random() * (window.innerHeight - 200);
+                    block.style.left = `${x}px`;
+                    block.style.top = `${y}px`;
+                    
+                    block.innerHTML = codeSnippets[i % codeSnippets.length];
+                    
+                    const duration = 15 + Math.random() * 10;
+                    block.style.animation = `codeBlockFloat ${duration}s ease-in-out infinite`;
+                    block.style.animationDelay = `${i * 5}s`;
+                    
+                    codeBlocks.appendChild(block);
+                }, i * 3000); // Add blocks with delay between them
+            }
+        }
+    
+        // Create pulse effects at random positions
+        function createPulseEffects() {
+            const pulseContainer = document.getElementById('pulse-container');
+            if (!pulseContainer) return; // Check if element exists
+            
+            // Create initial pulses
+            for (let i = 0; i < 3; i++) {
+                createPulse(pulseContainer);
+            }
+            
+            // Create new pulses periodically
+            setInterval(() => {
+                createPulse(pulseContainer);
+            }, 4000);
+        }
+    
+        function createPulse(container) {
+            const pulse = document.createElement('div');
+            pulse.classList.add('pulse-circle');
+            
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            pulse.style.left = `${x}px`;
+            pulse.style.top = `${y}px`;
+            
+            container.appendChild(pulse);
+            
+            // Remove the pulse element after animation completes
+            setTimeout(() => {
+                if (pulse && pulse.parentNode) {
+                    pulse.remove();
+                }
+            }, 4000);
+        }
+    
+        // Matrix effect
+        function initMatrixEffect() {
+            const canvas = document.getElementById('matrix-canvas');
+            if (!canvas) return; // Check if element exists
+            
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return; // Check if context is available
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const fontSize = 14;
+            const columns = Math.floor(canvas.width / fontSize);
+            
+            // Array to store the y position of each column
+            const drops = [];
+            for (let i = 0; i < columns; i++) {
+                drops[i] = Math.random() * -100;
+            }
+            
+            // Characters to display
+            const chars = '01';
+            
+            function draw() {
+                // Set semi-transparent black background to create trail effect
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#3a86ff';
+                ctx.font = `${fontSize}px monospace`;
+                
+                for (let i = 0; i < drops.length; i++) {
+                    // Random character
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    
+                    // x = i * fontSize, y = value of drops[i]
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    // Increment y coordinate
+                    drops[i]++;
+                    
+                    // Reset drop when it reaches bottom or randomly
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                }
+            }
+            
+            // Draw at 30fps
+            setInterval(draw, 33);
+        }
+    
+        // Create floating tech elements
+        function createFloatingTech() {
+            const container = document.getElementById('floating-tech');
+            if (!container) return; // Check if element exists
+            
+            const techElements = [
+                '<div class="tech-element"><div class="tech-cube"></div></div>',
+                '<div class="tech-element"><div class="tech-sphere"></div></div>',
+                '<div class="tech-element"><div class="tech-pyramid"></div></div>'
+            ];
+            
+            for (let i = 0; i < 5; i++) {
+                const element = document.createElement('div');
+                element.innerHTML = techElements[i % techElements.length];
+                
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                element.style.left = `${x}%`;
+                element.style.top = `${y}%`;
+                
+                if (element.firstChild) {
+                    container.appendChild(element.firstChild);
+                }
+            }
+        }
+    
+        // Typewriter effect
+        function setupTypewriter() {
+            const typewriterElement = document.getElementById('typewriter-text');
+            if (!typewriterElement) return; // Check if element exists
+            
+            const phrases = [
+                'Software Engineering Student',
+                'Full Stack Developer',
+                'UI Designer',
+                'Problem Solver'
+            ];
+            
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 100;
+            
+            function type() {
+                const currentPhrase = phrases[phraseIndex];
+                
+                if (isDeleting) {
+                    // Deleting text
+                    typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    // Typing text
+                    typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 100;
+                }
+                
+                // If word is complete, start deleting after pause
+                if (!isDeleting && charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    typingSpeed = 1000; // Pause at end of word
+                }
+                
+                // If deletion is complete, move to next word
+                if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    typingSpeed = 500; // Pause before starting new word
+                }
+                
+                setTimeout(type, typingSpeed);
+            }
+            
+            // Start the typewriter effect
+            setTimeout(type, 1000);
+        }
+    
+        // Animate sections on scroll
+        function animateSections() {
+            const sections = document.querySelectorAll('section');
+            if (!sections.length) return; // Check if elements exist
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+        
+        // Dark/Light mode toggle
+        function setupThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle-checkbox');
+            if (!themeToggle) return; // Check if element exists
+            
+            const htmlElement = document.documentElement;
+            
+            // Check for saved theme preference or use user's system preference
+            if (localStorage.getItem('theme') === 'light') {
+                htmlElement.classList.remove('dark-mode');
+                htmlElement.classList.add('light-mode');
+                themeToggle.checked = false;
+            } else {
+                htmlElement.classList.add('dark-mode');
+                htmlElement.classList.remove('light-mode');
+                themeToggle.checked = true;
+            }
+            
+            // Toggle theme when checkbox changes
+            themeToggle.addEventListener('change', function() {
+                if (this.checked) {
+                    htmlElement.classList.add('dark-mode');
+                    htmlElement.classList.remove('light-mode');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    htmlElement.classList.remove('dark-mode');
+                    htmlElement.classList.add('light-mode');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+        
+        // Mobile navigation toggle
+        function setupMobileNav() {
+            const navToggle = document.getElementById('nav-toggle');
+            if (!navToggle) return; // Check if element exists
+            
+            const navMenu = document.querySelector('nav ul');
+            if (!navMenu) return; // Check if element exists
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            // Toggle mobile menu
+            navToggle.addEventListener('change', function() {
+                if (this.checked) {
+                    navMenu.classList.add('active');
+                } else {
+                    navMenu.classList.remove('active');
+                }
+            });
+            
+            // Close mobile menu when clicking on links
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.checked = false;
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        function setupSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Adjust for header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Handle contact form submission
+        function setupContactForm() {
+            const contactForm = document.getElementById('contactForm');
+            if (!contactForm) return; // Check if element exists
+            
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Format email body with all form fields
+                const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0ASubject: ${subject}%0D%0A%0D%0A${message}`;
+                
+                window.location.href = `mailto:shaleekarashadi@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+                
+                alert('Redirecting to your email app.');
+                this.reset();
+            });
+        }
+        
+        // Add animation toggle button functionality
+        function setupAnimationToggle() {
+            const body = document.body;
+            const toggleButton = document.querySelector('.animation-toggle');
+            if (!toggleButton) return; // Check if element exists
+            
+            // Add initial class
+            body.classList.add('animations-visible');
+            
+            // Add click event
+            toggleButton.addEventListener('click', function() {
+                if (body.classList.contains('animations-visible')) {
+                    body.classList.remove('animations-visible');
+                    body.classList.add('animations-hidden');
+                    this.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                    localStorage.setItem('animations', 'hidden');
+                } else {
+                    body.classList.add('animations-visible');
+                    body.classList.remove('animations-hidden');
+                    this.innerHTML = '<i class="fas fa-eye"></i>';
+                    localStorage.setItem('animations', 'visible');
+                }
+            });
+            
+            // Check saved preference
+            if (localStorage.getItem('animations') === 'hidden') {
+                body.classList.remove('animations-visible');
+                body.classList.add('animations-hidden');
+                toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
+            }
+        }
+        
+        // Handle preloader
+        function setupPreloader() {
+            const preloader = document.querySelector('.preloader');
+            if (!preloader) return; // Check if element exists
+            
+            // Hide preloader when page is loaded
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    preloader.classList.add('loaded');
+                    setTimeout(function() {
+                        if (preloader.parentNode) {
+                            preloader.parentNode.removeChild(preloader);
+                        }
+                    }, 500);
+                }, 500);
+            });
+        }
+        
+        // Handle window resize for responsive animations
+        window.addEventListener('resize', function() {
+            // Clear and recreate animations that depend on window size
+            const circuitPattern = document.getElementById('circuit-pattern');
+            const network = document.getElementById('network');
+            const matrixCanvas = document.getElementById('matrix-canvas');
+            
+            if (circuitPattern) circuitPattern.innerHTML = '';
+            if (network) network.innerHTML = '';
+            if (matrixCanvas) {
+                matrixCanvas.width = window.innerWidth;
+                matrixCanvas.height = window.innerHeight;
+            }
+            
+            createCircuitPattern();
+            createNetworkNodes();
+        });
+        
+        // Initialize all functions when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                setupPreloader();
+                createParticles();
+                createTechAnimations();
+                animateSections();
+                setupThemeToggle();
+                setupMobileNav();
+                setupSmoothScroll();
+                setupContactForm();
+                setupAnimationToggle();
+                
+                // Add a small animation to hero section on load
+                setTimeout(() => {
+                    const heroSection = document.querySelector('#hero');
+                    if (heroSection) {
+                        heroSection.classList.add('visible');
+                    }
+                }, 300);
+            } catch (error) {
+                console.error("Error initializing animations:", error);
+            }
+        });
+    </script>
+</body>
+</html>
